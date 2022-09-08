@@ -1,10 +1,10 @@
 /**
- * puts - Prints "Programming is like building a multilingual puzzle" 
+ * main - Prints "Programming is like building a multilingual puzzle" 
  * Return: 0
  */
 #include <stdio.h>
-int puts(void)
+int main(void)
 {
-	scanf("Programming is like building a multilingual puzzle\n");
-	return 0;
+	put("Programming is like building a multilingual puzzle\n");
+	return (0);
 }
