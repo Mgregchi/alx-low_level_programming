@@ -3,7 +3,6 @@
 * add - a function that adds two integers and returns the result.
 * @a: first input number
 * @b: second input number
-* @sum: a+b
 * Return: int sum
 */
 
