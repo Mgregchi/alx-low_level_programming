@@ -20,12 +20,12 @@ Scope of variables
 
 ## FILE DESCRIPTIONS:.
 
-** File: 0-isupper.c - ** a function that checks for uppercase character.
+**File: 0-isupper.c -** a function that checks for uppercase character.
 
 Prototype: int _isupper(int c);
 Returns 1 if c is uppercase
 Returns 0 otherwise
-** File:  1-isdigit.c - ** a function that checks for a digit (0 through 9).
+**File:  1-isdigit.c -** a function that checks for a digit (0 through 9).
 
 Prototype: int _isdigit(int c);
 Returns 1 if c is a digit
