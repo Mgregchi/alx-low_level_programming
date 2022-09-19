@@ -5,7 +5,7 @@
 * @s: String whose length is to be determined
 *
 * len: Variable to store number of char in s
-*
+* Return: int
 */
 
 int _strlen(char *s)
