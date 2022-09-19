@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
-* swap_int - A function that swaps the values of two integers.
+*swap_int - A function that swaps the values of two integers.
 * 
-* @a: Variable a to be swapped with value of b
-* @b: Variale b to be swapped with valueof a.
-* @a_b: Variable to hold value of a before swap
-* @b_a: Variable to hold value of b before swap
+*@a: Variable a to be swapped with value of b
+*@b: Variale b to be swapped with valueof a.
+*a_b - Variable to hold value of a before swap
+*b_a - Variable to hold value of b before swap
 *
-* Description: swap values of two intgers.
+*Description: swap values of two intgers.
 *
-* Return: void
+*Return: void
 *
 */
 
