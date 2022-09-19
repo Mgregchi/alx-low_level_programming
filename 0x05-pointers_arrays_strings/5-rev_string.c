@@ -10,8 +10,9 @@ void rev_string(char *s)
 char rev = s[0];
 int i;
 int fcounter = 0;
- 
-fcounter = _strlen(char *s);
+
+while (s[fcounter] != '\0')
+fcounter++;
 
 for (i = 0; i < fcounter; i++)
 {
