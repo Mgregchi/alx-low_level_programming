@@ -2,7 +2,7 @@
 
 /**
 *swap_int - A function that swaps the values of two integers.
-* 
+*
 *@a: Variable a to be swapped with value of b
 *@b: Variale b to be swapped with valueof a.
 *a_b - Variable to hold value of a before swap
