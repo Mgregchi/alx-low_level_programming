@@ -1,28 +1,34 @@
 #include "main.h"
 
 /**
-* leet - Entry point
-* ONE if, TWO loops only...
-* @n: input
-* Return: Always 0 (Success)
+* cap_string - a function that capitalizes all words of a string
+* @n: input string
+* Return: caps on first letter of a separator
 */
-char *leet(char *n)
+char *cap_string(char *n)
 {
 int i, x;
-int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-int replacer[] = {'4', '3', '0', '7', '1'};
+int cap = 32;
+int separators[] = {',', ';', '.', '?', '"',
+'(', ')', '{', '}', ' ', '\n', '\t'};
 
 for (i = 0; n[i] != '\0'; i++)
 {
-for (x = 0; x <= 9; x++)
+if (n[i] >= 'a' && n[i] <= 'z')
 {
-if (n[i] == find[x])
-{
-n[i] = replacer[x / 2];
-x = 9;
-}
-}
+n[i] = n[i] - cap;
 }
 
+cap = 0;
+
+for (x = 0; x <= 12; x++)
+{
+if (n[i] == separators[x])
+{
+x = 12;
+cap = 32;
+}
+}
+}
 return (n);
 }
