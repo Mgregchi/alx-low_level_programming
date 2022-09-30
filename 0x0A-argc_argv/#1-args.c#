@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+/**
+* main - program that prints the number of arguments passed into it. Followed by newline.
+* @argc: Arguments count
+* @argv: Argument vectore
+*
+* Return: 0
+*/
+
+int main(int argc, char *argv[])
+{
+argv = 0;
+printf("%d\n", argc);
+return (0);
+}
