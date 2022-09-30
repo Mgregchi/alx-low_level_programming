@@ -1,18 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
-* main - program that prints the number of arguments passed into it.
-* Followed by newline.
-* @argc: Arguments count
-* @argv: Argument vectore
-*
-* Return: 0
-*/
-
-int main(int argc, char *argv[])
+ * main - Entry Point
+ * @argc: arguments
+ * @argv: array pointing to arguments
+ * Return: 0
+ */
+int main(int argc, __attribute__((unused)) char *argv[])
 {
-argv = argv;
-printf("%d\n", argc);
-return (0);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+	}
+	printf("%d\n", i - 1);
+	return (0);
 }
