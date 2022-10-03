@@ -22,7 +22,7 @@ return (NULL);
 
 for (count = 0; str[count] != '\0'; count++)
 ;
-dpstr = malloc(sizeof(char) * count);
+dpstr = malloc(sizeof(char) * count + 1);
 if (dpstr == NULL)
 return (NULL);
 for (i = 0; str[i] != '\0'; i++)
