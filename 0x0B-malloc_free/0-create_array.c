@@ -20,7 +20,11 @@ return (NULL);
 str = malloc(sizeof(char) * size);
 if (str == NULL)
 return (NULL);
+for (int i = 0; i < size; i++)
+{
 str[0] = c;
+}
+
 /** free(str);*/
 return (str);
 }
