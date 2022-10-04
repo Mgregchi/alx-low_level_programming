@@ -43,7 +43,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 size = lens1 + lens2;
-printf("SIZE IT: %d\n", size);
+
 
 if (lens1 > 0 && lens2 > 0)
 size += 2;
@@ -53,30 +53,30 @@ else
 {
 size++;
 }
-printf("SIZE IT: %d\n", size);
+
 newstr = malloc(sizeof(char) * size);
 if (newstr == NULL)
 return (NULL);
 while (s1[k] != '\0' && s1[k] != ' ')
 {
 newstr[k] = s1[k];
-printf("s1[%d] = %c\n", k, s1[k]);
+
 k++;
 };
 if (k > 0)
 {
 newstr[k] = ' ';
-printf("KK: %d\n NEW: %d\nCHAR: _%c_\n", k, _strlen(newstr), newstr[k - 1]);
+ _strlen(newstr), newstr[k - 1]);
 k++;
 }
 while (s2[j] != '\0' && s2[j] != ' ')
 {
 newstr[k + j] = s2[j];
-printf("s2[%d] = %c\n", k + j, s2[j]);
+
 j++;
 }
 newstr[size] = '\0';
-printf("SIZE: %d\nEXC: %c", size, newstr[k + j]);
+
 
 return (newstr);
 }
