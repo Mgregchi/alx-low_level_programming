@@ -11,7 +11,7 @@
 int _strlen(char *str)
 {
 int len = 0;
-printf("NULL: %s", str);
+
 if (str == NULL)
 return len;
 while (str[len] != '\0' && str[len] != ' ')
@@ -66,7 +66,6 @@ k++;
 if (k > 0)
 {
 newstr[k] = ' ';
- _strlen(newstr), newstr[k - 1]);
 k++;
 }
 while (s2[j] != '\0' && s2[j] != ' ')
@@ -80,4 +79,5 @@ newstr[size] = '\0';
 
 return (newstr);
 }
+
 
