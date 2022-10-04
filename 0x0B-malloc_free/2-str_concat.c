@@ -38,7 +38,6 @@ char *newstr;
 int lens1, lens2, k = 0, j = 0, size;
 lens1 = _strlen(s1);
 lens2 = _strlen(s2);
-printf("CHAR 2: %d\n", lens2);
 if (s1 == NULL)
 s1 = '\0';
 if (s2 == NULL)
@@ -52,7 +51,6 @@ else
 {
 size++;
 }
-
 newstr = malloc(sizeof(char) * size);
 if (newstr == NULL)
 return (NULL);
@@ -71,10 +69,10 @@ while (s2[j] != '\0' && s2[j] != ' ')
 {
 newstr[k + j] = s2[j];
 j++;
-printf("IN WHILE 2: \n"); 
+
 }
 newstr[size] = '\0';
-printf("LENGHT: %lu\n", strlen(newstr));
+
 return (newstr);
 }
 
