@@ -13,7 +13,7 @@ int _strlen(char *str)
 int len = 0;
 
 if (str == NULL)
-return len;
+return (len);
 while (str[len] != '\0' && str[len] != ' ')
 {
 len++;
@@ -38,13 +38,12 @@ char *newstr;
 int lens1, lens2, k = 0, j = 0, size;
 lens1 = _strlen(s1);
 lens2 = _strlen(s2);
+printf("CHAR 2: %d\n", lens2);
 if (s1 == NULL)
-s1 = "";
+s1 = '\0';
 if (s2 == NULL)
-s2 = "";
+s2 = '\0';
 size = lens1 + lens2;
-
-
 if (lens1 > 0 && lens2 > 0)
 size += 2;
 else if (lens1 > 0 || lens2 > 0)
@@ -71,12 +70,11 @@ k++;
 while (s2[j] != '\0' && s2[j] != ' ')
 {
 newstr[k + j] = s2[j];
-
 j++;
+printf("IN WHILE 2: \n"); 
 }
 newstr[size] = '\0';
-
-
+printf("LENGHT: %lu\n", strlen(newstr));
 return (newstr);
 }
 
