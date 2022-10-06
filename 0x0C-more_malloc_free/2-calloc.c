@@ -15,7 +15,7 @@ unsigned int *ptr;
 if (nmemb == 0 || size == 0)
 return (NULL);
 		
-ptr = (unsigned int*)calloc(nmemb, size);
+ptr = (unsigned int*)calloc(nmemb, size * sizeof(unsigned int);
 if (ptr == NULL)
 return (NULL);
 		
