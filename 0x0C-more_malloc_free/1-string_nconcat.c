@@ -27,32 +27,36 @@ return (count);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *newstr;
-int i;
-unsigned int lens2 = _strlen(s2), count = 0;
+int count, count1;
+int sign = n;
+char *ptr;
+int len1, len2;
+
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-if (n >= lens2)
+
+len1 = _strlen(s1);
+len2 = _strlen(s2);
+
+if (sign >= len2)
 {
-n = lens2;
-newstr = malloc((_strlen(s1) + n + 1) * sizeof(char));
+sign = len2;
+ptr = malloc(sizeof(char) * (len1 + len2 + 1));
 }
 else
-{
-newstr = malloc((_strlen(s1) + lens2 + 1) * sizeof(char));
-}
-if (newstr == NULL)
+ptr = malloc(sizeof(char) * (len1 + n + 1));
+if (ptr == NULL)
 return (NULL);
-
-for (i = 0; s1[i] != '\0'; i++)
-newstr[i] = s1[i];
-for (; s2[count] != '\0' && count <= n; i++)
+for (count = 0; count < len1; count++)
 {
-newstr[i] = s2[count];
-count++;
+ptr[count] = s1[count];
 }
-newstr[i + 1] = '\0';
-return (newstr);
+for (count1 = 0; count1 < sign; count1++)
+{
+ptr[count++] = s2[count1];
+}
+ptr[count++] = '\0';
+return (ptr);
 }
