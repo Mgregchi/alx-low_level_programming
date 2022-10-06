@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
 
-
 /**
 * _strlen - function that returns length or string
 * @str: string to return length
@@ -45,11 +44,10 @@ return (NULL);
 
 for (i = 0; s1[i] != '\0'; i++)
 newstr[i] = s1[i];
-for (; s2[count] != '\0' && count < n; i++)
+for (; s2[count] != '\0' && count <= n; i++)
 {
 newstr[i] = s2[count];
 count++;
 }
 return (newstr);
 }
-
