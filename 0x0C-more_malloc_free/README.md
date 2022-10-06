@@ -1,7 +1,6 @@
 # 0x0B. C - malloc, free
 
 ## Concepts
-**For thman or help:**
 
 For this project, we expect you to look at this concept:**
 - [Automatic and dynamic allocation, malloc and free](../0x0B-malloc_free/Concept_%20Automatic_and_dynamic_allocation_malloc_and_free_.pdf)
@@ -33,4 +32,12 @@ For this project, we expect you to look at this concept:**
 - In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own - main.c files at compilation. Our main.c files might be different from the one shown in the examples
 - The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
 - Don’t forget to push your header file
-  
+
+### Files and Descriptions:
+- File: 0-malloc_checked.c - `a function that allocates memory using malloc.`
+- File: 1-string_nconcat.c - `a function that concatenates two strings.`
+- File: 2-calloc.c - `a function that allocates memory for an array, using malloc.`
+- File: 3-array_range.c - `function that creates an array of integers.`
+- File: 100-realloc.c - `a function that reallocates a memory block using malloc and free`
+- File: 101-mul.c - `a program that multiplies two positive numbers.`
+- main.h: Function prototypes
