@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *newstr;
 int i;
-unsigned int lens2 = _strlen(s2), count;
+unsigned int lens2 = _strlen(s2), count = 0;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
@@ -53,5 +53,6 @@ for (; s2[count] != '\0' && count <= n; i++)
 newstr[i] = s2[count];
 count++;
 }
+newstr[i + 1] = '\0';
 return (newstr);
 }
