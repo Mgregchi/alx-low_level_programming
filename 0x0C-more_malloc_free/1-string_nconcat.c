@@ -37,8 +37,12 @@ s2 = "";
 if (n >= lens2)
 {
 n = lens2;
-}
 newstr = malloc((_strlen(s1) + n + 1) * sizeof(char));
+}
+else
+{
+newstr = malloc((_strlen(s1) + lens2 + 1) * sizeof(char));
+}
 if (newstr == NULL)
 return (NULL);
 
