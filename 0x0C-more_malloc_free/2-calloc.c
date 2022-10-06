@@ -7,21 +7,17 @@
 * @size: element size in bytes
 * Return: Pointer | NULL
 */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-char *ar;
-unsigned int ar_size, i;
-
+unsigned int *ptr;
+	 
 if (nmemb == 0 || size == 0)
 return (NULL);
-ar_size = nmemb * size;
-ar = malloc(ar_size);
-if (ar == NULL)
+		
+ptr = (unsigned int*)calloc(nmemb, size);
+if (ptr == NULL)
 return (NULL);
-while (i < ar_size)
-{
-ar[i] = 0;
-i++;
-}
-return (ar);
+		
+return (ptr);
 }
