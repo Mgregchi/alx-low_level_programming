@@ -34,7 +34,7 @@ return (0);
 * main - Program entry point
 * @argc: Arguments count
 * @argv: Arguments values
-*
+/*
 */
 
 int main(int argc, char *argv[])
