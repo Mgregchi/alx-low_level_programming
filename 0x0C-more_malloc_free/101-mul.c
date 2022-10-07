@@ -37,7 +37,7 @@ return (0);
 *
 */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int num1, num2;
 
@@ -52,4 +52,5 @@ if (num1 && num2 == 0)
 _error_handler();
 
 printf("%d\n", (num1 *num2));
+return (0);
 }
