@@ -39,11 +39,17 @@ return (0);
 
 int main(int argc, char *argv[])
 {
-int num1, num2;
-
+int num1, num2, i;
+char *ar;
 if (argc > 3 || argc < 3)
 {
 _error_handler();
+}
+ar = argv[2];
+while (ar[i] != '\0')
+{
+printf("ar[%d] = %c", i, ar[i]);
+i++;
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
