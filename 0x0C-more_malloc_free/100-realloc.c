@@ -32,7 +32,7 @@ return (s);
 if (new_size == 0 && ptr != NULL)
 {
 free(ptr);
-     return (NULL);
-     }
-     return (ptr);
+return (NULL);
+}
+return (ptr);
 }
