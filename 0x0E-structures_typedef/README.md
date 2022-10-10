@@ -3,13 +3,13 @@
 ## Resources
 Read or watch:
 
-[0x0d. Structures.pdf]()
-[struct (C programming language)]() 
-[Documentation: structures]() 
-[0x0d. Typedef and structures.pdf]() 
-[typedef]() 
-[Programming in C by Stephen Kochan - Chapter 8, Working with Structures p163-189]() 
-[The Lost Art of C Structure Packing (Advanced - not mandatory)]() 
+- [0x0d. Structures.pdf](./0x0d-Structures.pdf)
+- [struct (C programming language)](https://en.wikipedia.org/wiki/Struct_(C_programming_language)) 
+- [Documentation: structures](https://github.com/holbertonschool/Betty/wiki/Documentation:-Data-structures)
+- [Typeded and structures.pdf](./0x0d-Typedef-and-structures.pdf)
+- [typedef](https://publications.gbdirect.co.uk//c_book/chapter8/typedef.html) 
+- [Programming in C by Stephen Kochan - Chapter 8, Working with Structures p163-189](http://www.ru.ac.bd/stat/wp-content/uploads/sites/25/2019/03/107_05_Kochan-Programming-in-C-2004.pdf) 
+- [The Lost Art of C Structure Packing (Advanced - not mandatory)](http://www.catb.org/esr/structure-packing/) 
 
 
 ### General Learning Objectives
@@ -38,4 +38,8 @@ Read or watch:
 
 ### Files and Descriptions
 
-- File: main.h - `Functions prototypes`
+
+| File   | Description                                                                                             |
+| ------ | ------------------------------------------------------------------------------------------------------- |
+| dog.h  | a new type struct dog with the following elements: **char** ***name**, **int age**, **char** ***owner** |
+| main.h | `Functions prototypes`                                                                                  |
