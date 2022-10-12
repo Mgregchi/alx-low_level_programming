@@ -33,5 +33,5 @@ You don’t have to push _putchar.c, we will use our file. If you do it won’t 
 
 | File   | Description                                                                                             |
 | ------ | ------------------------------------------------------------------------------------------------------- |
-| dog.h  | a function that prints a name. Prototype: void print_name(char *name, void (*f)(char *)); |
+| 0-print_name.c  | a function that prints a name. Prototype: void print_name(char *name, void (*f)(char *)); |
 | function_pointers.h | `Functions prototypes`                                                                                  |
