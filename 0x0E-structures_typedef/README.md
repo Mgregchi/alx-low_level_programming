@@ -1,7 +1,6 @@
 # 0x0E. C - Structures, typedef
 
 ## Resources
-Read or watch:
 
 - [0x0d. Structures.pdf](./0x0d-Structures.pdf)
 - [struct (C programming language)](https://en.wikipedia.org/wiki/Struct_(C_programming_language)) 
