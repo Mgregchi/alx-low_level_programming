@@ -1,9 +1,10 @@
 #include "variadic_functions.h"
 
 /**
-*print_numbers - A function that prints numbers, followed by a new line.
-*@separator: pointer param
-*@n: param
+* print_numbers - A function that prints numbers,
+* followed by a new line.
+* @separator: pointer param
+* @n: param
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
