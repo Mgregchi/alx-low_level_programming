@@ -1,5 +1,3 @@
-
-
 #include "main.h"
 #include <stdlib.h>
 
@@ -151,5 +149,6 @@ free(tabres);
 exit(EXIT_SUCCESS);
 return (0);
 }
+
 
 
