@@ -1,27 +1,48 @@
-Allowed editors: vi, vim, emacs
+# 0x12. C - Singly linked lists
 
-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+## Resources
+**Read or watch:**
 
-All your files should end with a new line
+- [Linked Lists](https://youtu.be/udapt4FGY20)
+- [Google](https://www.google.com/search?q=linked+lists)
+- [Youtube](http://www.youtube.com/results?search_query=linked+lists)
 
-A README.md file, at the root of the folder of the project is mandatory
+### General Learning Objectives
+- When and why using linked lists vs arrays
+- How to build and use linked lists
 
-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+## General Requirements
 
-You are not allowed to use global variables
+* Allowed editors: vi, vim, emacs
 
-No more than 5 functions per file
+* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 
-The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
+* All your files should end with a new line
 
-You are allowed to use _putchar
+* A README.md file, at the root of the folder of the project is mandatory
 
-You don’t have to push _putchar.c, we will use our file. If you do it won’t be taken into account
+* Your code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 
-In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
+* You are not allowed to use global variables
 
-The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called lists.h
+* No more than 5 functions per file
 
-Don’t forget to push your header file
+* The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
 
-All your header files should be include guarded
+* You are allowed to use _putchar
+
+* You don’t have to push [_putchar.c](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c), we will use our file. If you do it won’t be taken into account
+
+* In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
+
+* The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called lists.h
+
+* Don’t forget to push your header file
+
+* All your header files should be include guarded
+
+### Files and Description
+
+| File           | Description                 |
+|----------------|-----------------------------|
+| lists.h        | Function prototypes         |
