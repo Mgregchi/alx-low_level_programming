@@ -1,0 +1,18 @@
+#include "lists.h"
+
+/**
+ * node_create - A function that create a new list node
+ */
+
+listint_t *node_create(listint_t **head, const int n)
+{
+	listint_t *ptr;
+
+	if (n == NULL)
+		return (NULL);
+	if ((ptr = (listint_t *)malloc(sizeof(listint_t))) == NULL)
+		return (NULL);
+	ptr->next = NULL;
+	ptr->n = n;
+	return (ptr);
+}
