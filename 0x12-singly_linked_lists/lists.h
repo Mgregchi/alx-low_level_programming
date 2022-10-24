@@ -3,9 +3,8 @@
 
 /*
  * File: lists.h
- * Auth: Akinremi Isaiah Adebayo.
  * Desc: Header file containing prototypes and definitions for all functions
- *       and types written in the 0x11-singly_linked_lists directory.
+ *       and types written in the 0x12-singly_linked_lists directory.
  */
 
 #include <stdlib.h>
@@ -24,9 +23,9 @@ typedef struct list_s
 
 {
 
-char *str;
-unsigned int len;
-struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);

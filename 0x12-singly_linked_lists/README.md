@@ -1,5 +1,10 @@
 # 0x12. C - Singly linked lists
 
+
+
+![**Structure of a C linked list**](C-Linked-List.png)
+
+
 ## Resources
 **Read or watch:**
 
