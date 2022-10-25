@@ -5,7 +5,7 @@
 * at the beginning of a listint_t list.
 * @head: Double pointer to linked list
 * @n: value of the new node
-* 
+*
 * Description: adds a new node at the beginning of linked list
 * Return: the address of the new element, or NULL if it failed
 */
