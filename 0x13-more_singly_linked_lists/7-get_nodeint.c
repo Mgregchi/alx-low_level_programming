@@ -16,7 +16,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	while (head != NULL)
 	{
 		/**
-        *
+        *Commented parts also works
+		*Uncomment below and the commented return
+		* statement. Remove or comment out equiv
 		*if (n == index)
 		*	return (head);
 		*head = head->next;
@@ -27,6 +29,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		head = head->next;
 		n++;
 	}
-
+    /**
+	*return (NULL);
+	*/
 	return (head);
 }
