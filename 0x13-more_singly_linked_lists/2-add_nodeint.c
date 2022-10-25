@@ -10,7 +10,7 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-listint_t *ptr = create_node(n);
-ptr->next = &head;
+listint_t **ptr = create_node(n);
+ptr->next = head;
 return (ptr);
 }
