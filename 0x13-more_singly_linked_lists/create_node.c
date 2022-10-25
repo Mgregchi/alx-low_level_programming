@@ -9,12 +9,12 @@
 
 listint_t *list_node_create(const int n)
 {
-	listint_t *ptr, *new_ptr;
-	if ((ptr = (listint_t *)malloc(sizeof(listint_t))) == NULL)
+	listint_t *ptr;
+	ptr = (listint_t *)malloc(sizeof(listint_t));
+	if (ptr == NULL)
 		return (NULL);
 	ptr->next = NULL;
 	ptr->n = n;
-	new_ptr = ptr;
 	free(ptr);
-	return (new_ptr);
+	return (ptr);
 }
