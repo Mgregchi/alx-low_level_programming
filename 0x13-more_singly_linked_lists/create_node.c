@@ -18,3 +18,9 @@ listint_t *list_node_create(const int n)
 	free(ptr);
 	return (new_ptr);
 }
+
+
+	for (ptr = head; *ptr != NULL;)
+		ptr = &(*ptr)->next;
+	item->next = *ptr;
+	*ptr = item;
