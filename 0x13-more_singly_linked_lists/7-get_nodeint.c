@@ -2,6 +2,7 @@
 
 /**
 * get_nodeint_at_index - function with two arguments
+*
 * @head: pointer to first node of linked list
 * @index: nth node
 *
@@ -24,7 +25,7 @@ while (head != NULL)
 *head = head->next;
 *n++;
 */
-if(n == index)
+if (n == index)
 break;
 head = head->next;
 n++;
