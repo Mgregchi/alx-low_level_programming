@@ -13,16 +13,21 @@ void free_listint2(listint_t **head)
 
 	if (head == NULL || *head == NULL)
 	{
+
 	}
-	while (*head != NULL)
+	else
 	{
-		tmp = *head;
-		/**
-		* I don't know if this is the best way
-		* Will leave this way for now.
-		*/
-		*head = tmp->next;
-		free(tmp);
+		while (*head != NULL)
+		{
+			tmp = *head;
+			/**
+			 * I don't know if this is the best way
+			 * Will leave this way for now.
+			 */
+			*head = tmp->next;
+			free(tmp);
+		}
+		*head = NULL;
 	}
-	*head = NULL;
+
 }
