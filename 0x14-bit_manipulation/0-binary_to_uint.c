@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int _pow_recursion(int x, int y);
+
 /**
 * binary_to_uint - function with one argument
 * @b: pointer to character
