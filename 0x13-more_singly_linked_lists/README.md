@@ -34,7 +34,7 @@
 
 * The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
 
-* You are allowed to use _putchar
+* You are allowed to use [_putchar.c](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
 
 * You don’t have to push [_putchar.c](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c), we will use our file. If you do it won’t be taken into account
 
