@@ -16,7 +16,7 @@ content = ""
 for dirpath, dirnames, files in \
 	os.walk(os.getcwd(), followlinks=False, topdown=True):
 	if not "." in dirpath:
-		fdir = f"├── {dirpath} "
+		fdir = f"├── {dirpath.lstrip()} "
 		#fdir = f"├── {dirnames} "
 		print(fdir)
 		content+=fdir
