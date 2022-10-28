@@ -32,12 +32,72 @@ It contains **C** source codes as a solution to ALX Projects and Tasks I am task
 │   ├── 5-printf.c
 │   ├── 6-size.c
 │   └── README.md
+├── 0x0A-argc_argv
+│   ├── 0-whatsmyname.c
+│   ├── 100-change.c
+│   ├── 1-args.c
+│   ├── 2-args.c
+│   ├── 3-mul.c
+│   ├── 4-add.c
+│   └── README.md
+├── 0x0B-malloc_free
+│   ├── working_but_rejected
+│	│   ├── 2-str_concat.c
+│	├── #2-str_concat.c#
+│   ├── 0-create_array.c
+│   ├── 1-strdup.c
+│   ├── 2-str_concat.c
+│   ├── 3-alloc_grid.c
+│   ├── 4-free_grid.c
+│   ├── 100-argstostr.c
+│   ├── 101-strtow.c
+│   ├── main.h
+│   ├── #README.md#
+│   └── README.md
+├── 0x0C-more_malloc_free
+│   ├── _putchar.c
+│   ├── #101-mul.c#
+│   ├── 0-malloc_checked.c
+│   ├── 1-main.c
+│   ├── 100-realloc.c
+│   ├── 101-mul.c
+│   ├── #101-mul.c#
+│   ├── 1-string_nconcat.c
+│   ├── 2-calloc.c
+│   ├── 3-array_range.c
+│   ├── main.h
+│   └── README.md
+├── 0x0D-preprocessor
+│   ├── 0-object_like_macro.h
+│   ├── 1-pi.h
+│   ├── 2-main.c
+│   ├── 3-function_like_macro.h
+│   ├── 4-sum.h
+│   ├── 101-prepreocessor_abuse.c
+│   └── README.md
+├── 0x0E-structures_typedef
+│   ├── 1-init_dog.c
+│   ├── 2-main.c
+│   ├── 2-print_dog.c
+│   ├── 4-new_dog.c
+│   ├── 5-free_dog.c
+│   ├── dog.h
+│   ├── main.h
+│   └── README.md
+├── 0x0F-function_pointers
+│   ├── 0-print_name.c
+│   ├── 1-array_iterator.c
+│   ├── 2-int_index.c
+│   ├── 3-calc.h
+│   ├── 3-get_op_func.c
+│   ├── 3-get_opop_func.c
+│   ├── 3-op_functions.c
+│   ├── 100-main_opcodes.c
+│   ├── function_pointers.h
+│   ├── main.h
+│   └── README.md
 ├── 0x01-variables_if_else_while
 │   ├── 0-positive_or_negative.c
-│   ├── 100-print_comb3.c
-│   ├── 101-print_comb4.c
-│   ├── 102-print_comb5.c
-│   ├── 10-print_comb2.c
 │   ├── 1-last_digit.c
 │   ├── 2-print_alphabet.c
 │   ├── 3-print_alphabets.c
@@ -47,13 +107,12 @@ It contains **C** source codes as a solution to ALX Projects and Tasks I am task
 │   ├── 7-print_tebahpla.c
 │   ├── 8-print_base16.c
 │   ├── 9-print_comb.c
+│   ├── 100-print_comb3.c
+│   ├── 101-print_comb4.c
+│   ├── 102-print_comb5.c
 │   └── README.md
 ├── 0x02-functions_nested_loops
-│   ├── 0-coding.c
-│   ├── 100-times_table.c
-│   ├── 104-fibonacci.c
-│   ├── 10-add.c
-│   ├── 11-print_to_98.c
+│   ├── 0-putchar.c
 │   ├── 1-alphabet.c
 │   ├── 2-print_alphabet_x10.c
 │   ├── 3-islower.c
@@ -63,12 +122,23 @@ It contains **C** source codes as a solution to ALX Projects and Tasks I am task
 │   ├── 7-print_last_digit.c
 │   ├── 8-24_hours.c
 │   ├── 9-times_table.c
-│   ├── coding.h
+│   ├── 10-add.c
+│   ├── 11-print_to_98.c
+│   ├── 100-times_table.c
+│   ├── 101-natural.c
+│   ├── 102-fibonacci.c
+│   ├── 104-fibonacci.c
+│   ├── main.h
 │   └── README.md
-├── 0x03-more_functions_nested_loops
+├── 0x03-debugging
+│   ├── 0-main.c
+│   ├── 1-main.c
+│   ├── 2-largest_numbers.c
+│   ├── 3-print_remanining_days.c
+│   ├── main.h
+│   └── README.md
+├── 0x04-more_functions_nested_loops
 │   ├── 0-isupper.c
-│   ├── 101-print_number.c
-│   ├── 10-print_triangle.c
 │   ├── 1-isdigit.c
 │   ├── 2-mul.c
 │   ├── 3-print_numbers.c
@@ -78,11 +148,13 @@ It contains **C** source codes as a solution to ALX Projects and Tasks I am task
 │   ├── 7-print_diagonal.c
 │   ├── 8-print_square.c
 │   ├── 9-fizz_buzz.c
-│   ├── coding.h
+│   ├── 10-print_triangle.c
+│   ├── 100-prime_factor.c
+│   ├── 101-print_number.c
+│   ├── main.h
 │   └── README.md
-├── 0x04-pointers_arrays_strings
+├── 0x05-pointers_arrays_strings
 │   ├── 0-reset_to_98.c
-│   ├── 100-atoi.c
 │   ├── 1-swap.c
 │   ├── 2-strlen.c
 │   ├── 3-puts.c
@@ -90,11 +162,40 @@ It contains **C** source codes as a solution to ALX Projects and Tasks I am task
 │   ├── 5-rev_string.c
 │   ├── 6-puts2.c
 │   ├── 7-print_chessboard.c
-│   ├── 8-print_diagsums.c
-│   ├── 9-set_string.c
+│   ├── 8-print_array.c
+│   ├── 9-strcpy.c
+│   ├── 100-atoi.c
+│   ├── 101-keygen.c
+│   ├── main.h
+│   └── README.md
+├── 0x06-pointers_arrays_strings
+│   ├── 0-reset_to_98.c
+│   ├── 1-swap.c
+│   ├── 2-strlen.c
+│   ├── 3-puts.c
+│   ├── 4-print_rev.c
+│   ├── 5-rev_string.c
+│   ├── 6-puts2.c
+│   ├── 7-print_chessboard.c
+│   ├── 8-print_array.c
+│   ├── 9-strcpy.c
+│   ├── 100-atoi.c
+│   ├── 101-keygen.c
 │   ├── coding.h
 │   └── README.md
-├── 0x07-recursion
+├── 0x07-pointers_arrays_strings
+│   ├── 0-memset.c
+│   ├── 1-memcpy.c
+│   ├── 2-strchr.c
+│   ├── 3-strspn.c
+│   ├── 4-strpbrk.c
+│   ├── 5-strstr.c
+│   ├── 7-print_chessboard.c
+│   ├── 8-print_diagsums.c
+│   ├── 100-set_string.c
+│   ├── main.h
+│   └── README.md
+├── 0x08-recursion
 │   ├── 0-puts_recursion.c
 │   ├── 100-wildcmp.c
 │   ├── 1-print_rev_recursion.c
@@ -110,60 +211,6 @@ It contains **C** source codes as a solution to ALX Projects and Tasks I am task
 │   ├── create_static_lib.sh
 │   ├── coding.h
 │   ├── libcoding.a
-│   └── README.md
-├── 0x09-argc_argv
-│   ├── 0-whatsmyname.c
-│   ├── 100-change.c
-│   ├── 1-args.c
-│   ├── 2-args.c
-│   ├── 3-mul.c
-│   ├── 4-add.c
-│   ├── coding.h
-│   └── README.md
-├── 0x0A-malloc_free
-│   ├── 0-create_array.c
-│   ├── 1-strdup.c
-│   ├── 2-str_concat.c
-│   ├── 3-alloc_grid.c
-│   ├── 4-free_grid.c
-│   ├── 5-argstostr.c
-│   ├── coding.h
-│   ├── #README.md#
-│   └── README.md
-├── 0x0B-more_malloc_free
-│   ├── 0-malloc_checked.c
-│   ├── 100-realloc.c
-│   ├── 101-mul.c
-│   ├── 1-string_nconcat.c
-│   ├── 2-calloc.c
-│   ├── 3-array_range.c
-│   ├── coding.h
-│   └── README.md
-├── 0x0C-preprocessor
-│   ├── 0-object_like_macro.h
-│   ├── 1-pi.h
-│   ├── 2-main.c
-│   ├── 3-function_like_macro.h
-│   ├── 4-sum.h
-│   ├── coding.h
-│   └── README.md
-├── 0x0D-structures_typedef
-│   ├── 1-init_dog.c
-│   ├── 2-print_dog.c
-│   ├── 4-new_dog.c
-│   ├── 5-free_dog.c
-│   ├── dog.h
-│   └── README.md
-├── 0x0E-function_pointers
-│   ├── 0-print_name.c
-│   ├── 100-main_opcodes.c
-│   ├── 1-array_iterator.c
-│   ├── 2-int_index.c
-│   ├── 3-calc.h
-│   ├── 3-get_op_func.c
-│   ├── 3-get_opop_func.c
-│   ├── 3-op_functions.c
-│   ├── function_pointers.h
 │   └── README.md
 ├── 0x0F-variadic_functions
 │   ├── 0-sum_them_all.c
@@ -196,6 +243,17 @@ It contains **C** source codes as a solution to ALX Projects and Tasks I am task
 │   ├── 8-sum_listint.c
 │   ├── 9-insert_nodeint.c
 │   ├── lists.h
+│   └── README.md
+├── 0x014-bit_manipulation
+│   ├── 0-binary_to_uint.c
+│   ├── 1-print_binary.c
+│   ├── 2-get_bit.c
+│   ├── 3-set_bit.c
+│   ├── 4-clear_bit.c
+│   ├── 5-flip_bits.c
+│   ├──	100-get_endianness.c
+│   ├── Bitwise-operators.png
+│   ├──	main.h
 │   └── README.md
 ├── README.md
 ```
