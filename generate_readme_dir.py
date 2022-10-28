@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os
 
 """
@@ -9,14 +11,14 @@ for dir in os.walk(os.getcwd()):
 #os.fwalk()
 #are identical to walk() output, and dirfd
 
-content = ""
+#content = ""
 
 for dirpath, dirnames, files in \
 	os.walk(os.getcwd(), followlinks=False, topdown=True):
 	if not "." in dirpath:
 		fdir = f"├── {dirpath} "
 		print(fdir)
-		content+=fdir
+		#content+=fdir
 	for file in files:
 		"""
 		if os.path.isfile(os.path.join(dir,file)):
@@ -29,10 +31,10 @@ for dirpath, dirnames, files in \
 			ffile = f"│   ├── {file} "
 			#if os.path.isfile(dir,file):
 			print(ffile)
-			content+=ffile
-			print(f"ABSPATH :{os.path.abspath(file)}")
+			#content+=ffile
+			#print(f"{file}")
 		except TypeError as err:
 			print(f"{file} seem not to be a file and was ignored.")
-
-print("\n\n\n\n\n\n\n\n\n\n\n",content)
-print(content.split(" "))
+        break
+#print("\n\n\n\n\n\n\n\n\n\n\n",content)
+#print(content.split(" "))
