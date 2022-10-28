@@ -15,7 +15,8 @@ for dir in os.walk(os.getcwd()):
 
 for dirpath, dirnames, files in \
 	os.walk(os.getcwd(), followlinks=False, topdown=True):
-	if not "." in dirpath:
+	
+        if not "." in dirpath:
 		fdir = f"├── {dirpath} "
 		print(fdir)
 		#content+=fdir
