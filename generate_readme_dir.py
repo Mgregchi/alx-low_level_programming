@@ -15,8 +15,8 @@ for dir in os.walk(os.getcwd()):
 
 for dirpath, dirnames, files in \
 	os.walk(os.getcwd(), followlinks=False, topdown=True):
-	
-        if not "." in dirpath:
+
+    if not "." in dirpath:
 		fdir = f"├── {dirpath} "
 		print(fdir)
 		#content+=fdir
@@ -36,6 +36,6 @@ for dirpath, dirnames, files in \
 			#print(f"{file}")
 		except TypeError as err:
 			print(f"{file} seem not to be a file and was ignored.")
-        break
+    break
 #print("\n\n\n\n\n\n\n\n\n\n\n",content)
 #print(content.split(" "))
