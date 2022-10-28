@@ -1,4 +1,4 @@
-#include "coding.h"
+#include "main.h"
 
 /**
 * flip_bits - function with two arguments
@@ -11,16 +11,16 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned long int value;
-unsigned int count = 0;
+	unsigned long int value;
+	unsigned int count = 0;
 
-value = n ^ m;
+	value = n ^ m;
 
-while (value != 0)
-{
-if ((value & 1) == 1)
-count++;
-value = value >> 1;
-}
-return (count);
+	while (value != 0)
+	{
+		if ((value & 1) == 1)
+			count++;
+		value = value >> 1;
+	}
+	return (count);
 }
