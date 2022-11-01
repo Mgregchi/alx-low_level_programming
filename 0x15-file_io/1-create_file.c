@@ -7,39 +7,30 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-	int file, i = 0;
-	struct stat fs;
-        unsigned int perm;
+	int fd;
+	int nletters;
+	int rwr;
 
-	if (filename == NULL || !filename)
-		return (-1);
-	
-	r = stat(filename,&fs);
-	if( r == -1 )
-        {
-                perm = 0600;
-        }
-        else
-        {
-        perm = fs.st_mode;
-        }
-        printf("%d", perm);
-	file = open(filename, O_CREAT | O_TRUNC | O_WRONLY, perm);
-	if (file == -1)
+	if (!filename)
 		return (-1);
 
-	if (text_content == NULL || !text_content)
-	{
-		close(file);
-		return (-1);
-	}
-	else
-	{
-		while (text_content[i])
-			i++;
-		write(file, text_content, i);
-	}
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-	close(file);
+	if (fd == -1)
+		return (-1);
+
+	if (!text_content)
+		text_content = "";
+
+	for (nletters = 0; text_content[nletters]; nletters++)
+		;
+
+	rwr = write(fd, text_content, nletters);
+
+	if (rwr == -1)
+		return (-1);
+
+	close(fd);
+
 	return (1);
 }
