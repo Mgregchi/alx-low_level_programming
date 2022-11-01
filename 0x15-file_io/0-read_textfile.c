@@ -6,34 +6,34 @@
 * @letters: size
 * Return: 0
 */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file, rd, wr;
-	char *buf;
+	int fd;
+	ssize_t lenr, lenw;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
-
-	file = open(filename, O_RDONLY);
-
-	if (file == -1)
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 		return (0);
-
-	buf = malloc(sizeof(char) * letters + 1);
-	if (buf == NULL)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+	{
+		close(fd);
 		return (0);
-
-	rd = read(file, buf, letters);
-	if (rd == -1)
+	}
+	lenr = read(fd, buffer, letters);
+	close(fd);
+	if (lenr == -1)
+	{
+		free(buffer);
 		return (0);
-
-	buf[letters] = '\0';
-
-	wr = write(1, buf, rd);
-	if (wr == -1)
+	}
+	lenw = write(STDOUT_FILENO, buffer, lenr);
+	free(buffer);
+	if (lenr != lenw)
 		return (0);
-
-	close(file);
-	free(buf);
-	return (wr);
+	return (lenw);
 }
