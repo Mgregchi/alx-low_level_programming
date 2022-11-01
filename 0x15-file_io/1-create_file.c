@@ -8,11 +8,23 @@
 int create_file(const char *filename, char *text_content)
 {
 	int file, i = 0;
+	struct stat fs;
+        unsigned int perm;
 
 	if (filename == NULL || !filename)
 		return (-1);
-
-	file = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+	
+	r = stat(filename,&fs);
+	if( r == -1 )
+        {
+                perm = 0600;
+        }
+        else
+        {
+        perm = fs.st_mode;
+        }
+        printf("%d", perm);
+	file = open(filename, O_CREAT | O_TRUNC | O_WRONLY, perm);
 	if (file == -1)
 		return (-1);
 
