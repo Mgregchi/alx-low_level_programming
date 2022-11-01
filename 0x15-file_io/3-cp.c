@@ -1,11 +1,12 @@
-#include "holberton.h"
+#include "main.h"
+
 void closer(int arg_files);
 /**
- * main - Entry Point
- * @argc: # of args
- * @argv: array pointer for args
- * Return: 0
- */
+* main - Entry Point
+* @argc: # of args
+* @argv: array pointer for args
+* Return: 0
+*/
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, file_from_r, wr_err;
@@ -55,10 +56,10 @@ int main(int argc, char *argv[])
 }
 
 /**
- * closer - close with error
- * @arg_files: argv 1 or 2
- * Return: void
- */
+* closer - close with error
+* @arg_files: argv 1 or 2
+* Return: void
+*/
 void closer(int arg_files)
 {
 	int close_err;
