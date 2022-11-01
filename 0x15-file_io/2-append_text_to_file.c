@@ -1,11 +1,11 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * append_text_to_file - Entry Point
- * @filename: file name
- * @text_content: text content
- * Return: 1
- */
+* append_text_to_file - Entry Point
+* @filename: file name
+* @text_content: text content
+* Return: 1
+*/
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int file, wr, i = 0;
