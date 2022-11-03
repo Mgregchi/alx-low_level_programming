@@ -1,4 +1,5 @@
 # 0x15. C - File I/O
+<<<<<<< HEAD
 
 ## Resources
 **Read or watch:**
@@ -53,3 +54,5 @@ Any use of functions like printf, puts, calloc, realloc etc… is forbidden
 | --------- | ------------------- |
 | main.h    | Function prototypes |
 | README.md | README file         |
+=======
+>>>>>>> 212c4ba298d91fcd675ff3a0cef6b382493886ca
