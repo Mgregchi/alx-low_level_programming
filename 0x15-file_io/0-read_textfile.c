@@ -7,37 +7,61 @@
 * Return: number of letters, 0 in other case
 */
 
+
 ssize_t read_textfile(const char *filename, size_t letters)
+
 {
-	char *st;
-	int op, rd, wr;
 
-	if (filename == NULL || !filename)
-		return (0);
+int fd;
 
-	st = malloc(letters);
-	op = open(filename, O_RDONLY);
+ssize_t lenr, lenw;
 
-	if (op == -1)
-	{
-		free(st);
-		return (0);
-	}
-	rd = read(op, st, letters);
-	if (rd == -1)
-	{
-		free(st);
-		return (0);
-	}
-	wr = write(STDOUT_FILENO, st, rd);
+char *buffer;
 
-	if (wr == -1)
-	{
-		free(st);
-		close(op);
-		return (0);
-	}
-	free(st);
-	close(op);
-	return (wr);
+if (filename == NULL)
+
+return (0);
+
+fd = open(filename, O_RDONLY);
+
+if (fd == -1)
+
+return (0);
+
+buffer = malloc(sizeof(char) * letters);
+
+if (buffer == NULL)
+
+{
+
+close(fd);
+
+return (0);
+
+}
+
+lenr = read(fd, buffer, letters);
+
+close(fd);
+
+if (lenr == -1)
+
+{
+
+free(buffer);
+
+return (0);
+
+}
+
+lenw = write(STDOUT_FILENO, buffer, lenr);
+
+free(buffer);
+
+if (lenr != lenw)
+
+return (0);
+
+return (lenw);
+
 }
