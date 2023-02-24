@@ -286,4 +286,4 @@ Requirements:
 ---
 
 ## Author
-* **Michael .C. Amadi** - [tassavarat](https://github.com/mgregchi)
+* **Michael .C. Amadi** - [Mgregchi](https://github.com/mgregchi)
